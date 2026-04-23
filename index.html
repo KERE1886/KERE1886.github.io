@@ -2,117 +2,58 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oyunlarım</title>
+<title>Ana Sayfa</title>
 
 <style>
-  body {
-    margin: 0;
-    font-family: Arial;
-    background: #0f172a;
-    color: white;
-  }
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
 
-  /* HEADER */
-  header {
-    text-align: center;
-    padding: 60px 20px 20px;
-  }
+.menu {
+  background: rgba(0,0,0,0.6);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px black;
+}
 
-  header h1 {
-    font-size: 42px;
-    margin: 0;
-    color: #38bdf8;
-  }
+h1 {
+  margin-bottom: 20px;
+}
 
-  header p {
-    color: #cbd5e1;
-  }
+a {
+  display: inline-block;
+  padding: 15px 30px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
 
-  /* SECTION TITLE */
-  .section-title {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 28px;
-    color: white;
-  }
-
-  /* GAMES */
-  .games {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 40px;
-  }
-
-  .game {
-    background: rgba(255,255,255,0.05);
-    width: 250px;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .game:hover {
-    transform: translateY(-10px);
-    background: rgba(56,189,248,0.15);
-  }
-
-  .game button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background: #38bdf8;
-    color: black;
-    font-weight: bold;
-  }
-
-  footer {
-    text-align: center;
-    padding: 20px;
-    color: #94a3b8;
-  }
+a:hover {
+  background: orange;
+  transform: scale(1.1);
+}
 </style>
 
 </head>
 <body>
 
-<header>
-  <h1>YAPTIGIM OYUNLAR</h1>
-  <p>Burada yaptığım oyunları görebilirsin</p>
-</header>
+<div class="menu">
+  <h1>🎮 Level Oyunu</h1>
+  <p>Başlamak için tıkla</p>
 
-<h2 class="section-title">🎮 OYUNLAR BÖLÜMÜ</h2>
-
-<section class="games">
-
-  <div class="game">
-    <h3>Click Game</h3>
-    <p>Puan kazanma oyunu</p>
-    <button onclick="alert('Oyun yakında eklenecek')">Oyna</button>
-  </div>
-
-  <div class="game">
-    <h3>Level Game</h3>
-    <p>Level atlama sistemi</p>
-    <button onclick="alert('Oyun yakında eklenecek')">Oyna</button>
-  </div>
-
-  <div class="game">
-    <h3>Mini Game</h3>
-    <p>Basit eğlenceli oyun</p>
-    <button onclick="alert('Oyun yakında eklenecek')">Oyna</button>
-  </div>
-
-</section>
-
-<footer>
-  © 2026 Oyun Sitesi
-</footer>
+  <a href="oyun1.html">Oyna</a>
+</div>
 
 </body>
 </html>
